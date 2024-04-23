@@ -1,0 +1,4 @@
+{
+    "model_path": "models/last.pt",
+    "error_message": "We were not able to detect the card, make sure the card corners are fully visible in the frame and try again."
+}

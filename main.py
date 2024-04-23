@@ -4,7 +4,6 @@ from inference.get_card import predict_mask, get_wrapped_card
 import cv2
 import numpy as np
 import io
-import base64
 from ultralytics import YOLO
 
 app = Flask(__name__)
@@ -15,10 +14,6 @@ with open('config/model_config.json') as f:
 
 # Load YOLOv8s model
 model = YOLO(config['model_path'])  # Load YOLOv8s model
-
-
-def welcome():
-    return 'Welcome to the ID card wrapper service!'
 
 
 # Define a post request endpoint that receives the image and returns the wrapped card
